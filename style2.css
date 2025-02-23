@@ -16,7 +16,9 @@ body {
         color: rgb(145, 189, 248);
         display: grid;
         place-items: center; /*центрирование по горизонтали и вертикали*/
-        height: 90vh; /*сдвиг вниз + масштабирование самого сайта*/
+        position: relative; /*позиция*/
+        top: 10px; /*сдвиг вниз*/
+        right: 6px; /*сдвиг влево*/
         text-decoration: none; /*убирает нижнее подчеркивание*/
         animation: color-change 9s infinite; /*анимация переливания цветов текста*/
     }
@@ -26,8 +28,8 @@ body {
         font-size: 20px; /*размер текста*/
         position: relative; /*позиция*/
         bottom: 100px; /*сдвиг в вверх*/
-        left: 115px; /*сдвиг вправо*/
-        line-height: 3.3; /*высота между строками текстов*/
+        left: 111px; /*сдвиг вправо*/
+        line-height: 1.3; /*высота между строками текстов*/
         letter-spacing: 1px; /*расстояние между буквами*/
     }
 
@@ -41,7 +43,7 @@ body {
         margin-left: 10px; /*устанавливает одинаковые отступы со всех сторон*/
         position: relative; /*позиция*/
         top: 170px; /*сдвиг вниз*/
-        right: 93px; /*сдвиг влево*/
+        right: 100px; /*сдвиг влево*/
         background-color: lightsteelblue; /*цвет заднего фона кнопки*/
         border-radius: 12% 3px; /*скругление углов*/
         color: black; /*цвет текста*/
