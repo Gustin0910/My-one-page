@@ -14,6 +14,9 @@ body {
 
     .my {
         color: rgb(145, 189, 248);
+        display: grid;
+        place-items: center; /*центрирование по горизонтали и вертикали*/
+        height: 90vh; /*сдвиг вниз + масштабирование самого сайта*/
         text-decoration: none; /*убирает нижнее подчеркивание*/
         animation: color-change 9s infinite; /*анимация переливания цветов текста*/
     }
