@@ -1,0 +1,10 @@
+body {
+    display: grid;
+    place-items: center; /*центрирование по горизонтали и вертикали*/
+    height: 90vh; /*сдвиг вниз + масштабирование самого сайта*/
+}
+
+.dz {
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+}

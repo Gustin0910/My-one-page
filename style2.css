@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;  /*блокировка картинки на сайте*/
+    justify-content: center;    /*всегда по центру*/
+    align-items: center;    /*выравнивание картинки*/
+    height: 100vh;  /*высота сайта*/
+    background-image: url(fon2.jpg); /*сама картинка сайта на заднем фоне*/
+    background-repeat: no-repeat;   /*без повторения картинки*/
+    background-size: cover; /*размер картинки*/
+    background-position: 50%; /*положение картинки*/
+    }
+
+    .my {
+        color: rgb(145, 189, 248);
+        text-decoration: none; /*убирает нижнее подчеркивание*/
+        animation: color-change 9s infinite; /*анимация переливания цветов текста*/
+    }
+    
+    .content-box {
+        font-family:OCR A Std, monospace; /*шрифт текста*/
+        font-size: 20px; /*размер текста*/
+        position: relative; /*позиция*/
+        bottom: 100px; /*сдвиг в вверх*/
+        left: 115px; /*сдвиг вправо*/
+        line-height: 3.3; /*высота между строками текстов*/
+        letter-spacing: 1px; /*расстояние между буквами*/
+    }
+
+    @keyframes color-change {   /*заданный цвет переливания*/
+        0% { color: rgb(101, 194, 245); }
+        50% { color:rgb(105, 170, 255);}
+        100% { color:rgb(101, 194, 231);}
+    }
+
+    .button {
+        margin: 10px; /*устанавливает одинаковые отступы со всех сторон*/
+        position: relative; /*позиция*/
+        top: 170px; /*сдвиг вниз*/
+        right: 93px; /*сдвиг влево*/
+        background-color: lightsteelblue; /*цвет заднего фона кнопки*/
+        border-radius: 12% 3px; /*скругление углов*/
+        color: black; /*цвет текста*/
+        padding: 10px 14px; /*отступ края кнопки от текста*/
+        font-size: 22px; /*размер*/
+        font-weight: bold; /*жирность текста*/
+        min-width: auto; /*устанавливает минимальную ширину кнопки, с текстом разной длины*/
+        text-align: center; /*выравнивание текста по центру кнопки*/
+        text-decoration: none; /*убирает подчеркивание*/
+        transition: background-color 0.5s; /*плавный переход цвета*/
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    }
+
+    .button:hover {
+        background-color:rgb(111, 231, 247); /*цвет при наведении курсора на кнопку*/
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1); /*тень*/
+        transition: box-shadow 0.1s; /*время появления тени*/
+    }
