@@ -26,6 +26,16 @@ body {
         100% { color:rgb(76, 171, 209);}
     }
 
+    .my {
+    text-shadow:
+        -1px 0 #41a5d3, /* Слева */
+        1px 0 #4a86be, /* Справа */
+        0 -1px #57cbee, /* Сверху */
+        0 1px #206779, /* Снизу */
+        0 0 10px #528cbb, /* Свечение */
+        0 0 20px #0586ff;
+    }
+
     .button {
         background-color: lightsteelblue; /*цвет заднего фона кнопки*/
         border-radius: 12% 3px; /*скругление углов*/
@@ -45,3 +55,14 @@ body {
         box-shadow: 0 0 10px rgba(0, 0, 0, 1); /*тень*/
         transition: box-shadow 0.1s; /*время появления тени*/
     }
+
+    /* Адаптация для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .content-box {
+        font-size: 18px;
+    }
+    .button {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+}
