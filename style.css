@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;  /*блокировка картинки на сайте*/
+    justify-content: center;    /*всегда по центру*/
+    align-items: center;    /*выравнивание картинки*/
+    height: 100vh;  /*высота сайта*/
+    background-image: url(fon1.jpg); /*сама картинка сайта на заднем фоне*/
+    background-repeat: no-repeat;   /*без повторения картинки*/
+    background-size: cover; /*размер картинки*/
+    background-position: 50%; /*положение картинки*/
+    }
+
+    .content-box {
+        font-size: 20px;
+        font-family:OCR A Std, monospace; /*шрифт текста*/
+        line-height: 3.0; /*высота между строками текстов*/
+        letter-spacing: 1px; /*расстояние между буквами*/
+        animation: color-change 9s infinite; /*анимация переливания цветов текста*/
+    }
+
+    @keyframes color-change {   /*заданный цвет переливания*/
+        0% { color: rgb(101, 194, 245); }
+        50% { color:rgb(105, 170, 255);}
+        100% { color:rgb(76, 171, 209);}
+    }
+
+    .my {
+    text-shadow:
+        -1px 0 #41a5d3, /* Слева */
+        1px 0 #4a86be, /* Справа */
+        0 -1px #57cbee, /* Сверху */
+        0 1px #206779, /* Снизу */
+        0 0 10px #528cbb, /* Свечение */
+        0 0 20px #0586ff;
+    }
+
+    .button {
+        background-color: lightsteelblue; /*цвет заднего фона кнопки*/
+        border-radius: 12% 3px; /*скругление углов*/
+        color: black; /*цвет текста*/
+        padding: 4px 10px; /*отступ края кнопки от текста*/
+        font-size: 20px; /*размер*/
+        font-weight: bold; /*жирность текста*/
+        min-width: auto; /*устанавливает минимальную ширину кнопки, с текстом разной длины*/
+        text-align: center; /*выравнивание текста по центру кнопки*/
+        text-decoration: none; /*убирает подчеркивание*/
+        transition: background-color 0.5s; /*плавный переход цвета*/
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    }
+
+    .button:hover {
+        background-color:rgb(111, 231, 247); /*цвет при наведении курсора на кнопку*/
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1); /*тень*/
+        transition: box-shadow 0.1s; /*время появления тени*/
+    }
+
+    /* Адаптация для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .content-box {
+        font-size: 18px;
+    }
+    .button {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+}
