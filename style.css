@@ -1,25 +1,24 @@
 body {
     margin: 0;
     padding: 0;
-
-     /*использование flexxbox для центрирования сайта*/
-    display: flex; /*стекаем элементы по вертикали*/
-    flex-direction: column; /*выравниваем по вертикали*/
-    justify-content: center; /* Выравниваем по центру сайта */
-    align-items: center; /* Выравниваем по горизонтали */
-    height: 100vh; /*установка высоты страницы на всю высоту экрана*/
-
-    background-image: url(fon2.jpg);
-    background-repeat: no-repeat;  /*без повторения картинки*/
+    
+    display: flex;  /*блокировка картинки на сайте*/
+    justify-content: center;    /*всегда по центру*/
+    align-items: center;    /*выравнивание картинки*/
+    height: 100vh;  /*высота сайта*/
+    background-image: url(fon1.jpg); /*сама картинка сайта на заднем фоне*/
+    background-repeat: no-repeat;   /*без повторения картинки*/
     background-size: cover; /*размер картинки*/
     background-position: 50%; /*положение картинки*/
-}
+    }
 
-.content-box {
-    font-family: OCR A Std, monospace;
-    font-size: 20px; /*размер шрифта*/
-    margin-bottom: 10px; /*отступ между блоками*/
-}
+    .content-box {
+        font-size: 20px;
+        font-family:OCR A Std, monospace; /*шрифт текста*/
+        line-height: 3.0; /*высота между строками текстов*/
+        letter-spacing: 1px; /*расстояние между буквами*/
+        animation: color-change 9s infinite; /*анимация переливания цветов текста*/
+    }
 
     @keyframes color-change {   /*заданный цвет переливания*/
         0% { color: rgb(101, 194, 245); }
