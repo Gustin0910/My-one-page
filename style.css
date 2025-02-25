@@ -6,7 +6,7 @@ body {
     justify-content: center;    /*всегда по центру*/
     align-items: center;    /*выравнивание картинки*/
     height: 100vh;  /*высота сайта*/
-    background-image: url(fon1.jpg); /*сама картинка сайта на заднем фоне*/
+    background-image: url(img/fon1.jpg); /*сама картинка сайта на заднем фоне*/
     background-repeat: no-repeat;   /*без повторения картинки*/
     background-size: cover; /*размер картинки*/
     background-position: 50%; /*положение картинки*/
