@@ -12,7 +12,7 @@ body {
     background-image: url(fon2.jpg);
     background-repeat: no-repeat;  /*без повторения картинки*/
     background-size: cover; /*размер картинки*/
-    background-position: 100px 100px; /*положение картинки*/
+    background-position: center; /*положение картинки*/
 }
 
 .content-box {
