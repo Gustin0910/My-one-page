@@ -64,18 +64,3 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);  /*тень при наведении*/
     transition: box-shadow 0.1s; /*плавный переход тени*/
 }
-
-/* Адаптация для мобильных устройств */
-@media screen and (max-width: 768px) {
-    body {
-        background-size: contain;
-        background-position: center;
-    }
-    .content-box {
-        font-size: 18px;
-    }
-    .button {
-        font-size: 18px;
-        padding: 8px 12px;
-    }
-}
