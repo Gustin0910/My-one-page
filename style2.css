@@ -11,7 +11,7 @@ body {
 
     background-image: url(fon2.jpg);
     background-repeat: no-repeat;  /*без повторения картинки*/
-    background-size: 100% 100%; /*размер картинки*/
+    background-size: cover; /*размер картинки*/
     background-position: center; /*положение картинки*/
 }
 
@@ -67,6 +67,10 @@ body {
 
 /* Адаптация для мобильных устройств */
 @media screen and (max-width: 768px) {
+    body {
+        background-size: contain;
+        background-position: center;
+    }
     .content-box {
         font-size: 18px;
     }
