@@ -11,8 +11,7 @@ body {
 
     background-image: url(fon2.jpg);
     background-repeat: no-repeat;  /*без повторения картинки*/
-    background-size: cover; /*размер картинки*/
-    background-position: ; /*положение картинки*/
+    
 }
 
 .content-box {
