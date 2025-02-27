@@ -67,12 +67,3 @@ body {
 }
 
 /* Адаптация для мобильных устройств */
-@media screen and (max-width: 768px) {
-    .content-box {
-        font-size: 18px;
-    }
-    .button {
-        font-size: 18px;
-        padding: 8px 12px;
-    }
-}
