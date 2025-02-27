@@ -10,9 +10,10 @@ body {
     height: 100vh; /*установка высоты страницы на всю высоту экрана*/
 
     background-image: url(fon2.jpg);
+    
     background-repeat: no-repeat;  /*без повторения картинки*/
     background-size: cover; /*размер картинки*/
-    background-position: 50%; /*положение картинки*/
+    background-position: 50% 50%; /*положение картинки*/
 }
 
 .content-box {
