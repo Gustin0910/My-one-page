@@ -3,7 +3,7 @@ body {
     padding: 0;
 
      /*использование flexxbox для центрирования сайта*/
-    display: center; /*стекаем элементы по вертикали*/
+    display: flex; /*стекаем элементы по вертикали*/
     flex-direction: column; /*выравниваем по вертикали*/
     justify-content: center; /* Выравниваем по центру сайта */
     align-items: center; /* Выравниваем по горизонтали */
