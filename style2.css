@@ -1,9 +1,9 @@
 body {
-    margin: 0;
+    margin-top: 0;
     padding: 0;
 
      /*использование flexxbox для центрирования сайта*/
-    display: grid; /*стекаем элементы по вертикали*/
+    display: flex; /*стекаем элементы по вертикали*/
     flex-direction: column; /*выравниваем по вертикали*/
     justify-content: center; /* Выравниваем по центру сайта */
     align-items: center; /* Выравниваем по горизонтали */
@@ -12,7 +12,7 @@ body {
     background-image: url(fon2.jpg);
     background-repeat: no-repeat;  /*без повторения картинки*/
     background-size: cover; /*размер картинки*/
-    background-position: 50% 50%; /*положение картинки*/
+    background-position: 50%; /*положение картинки*/
 }
 
 .content-box {
