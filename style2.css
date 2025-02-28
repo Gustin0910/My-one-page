@@ -69,7 +69,7 @@ body {
     body {
         overflow-x: hidden;
         overflow-y: hidden;
-        background-attachment: local;
+        
     }
     .content-box {
         font-size: 18px;
