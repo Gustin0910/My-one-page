@@ -68,8 +68,7 @@ body {
 /* Адаптация для мобильных устройств */
 @media screen and (max-width: 768px) {
     body {
-        background-size: cover;
-        height: 100vh;
+        background-size: 40px 40px;
     }
     .content-box {
         font-size: 18px;
