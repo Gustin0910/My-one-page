@@ -67,7 +67,6 @@ body {
 /* Адаптация для мобильных устройств */
 @media screen and (max-width: 768px) {
     body {
-        width: 100vw;
         height: 100vh;
     }
     .content-box {
