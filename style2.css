@@ -12,7 +12,6 @@ body {
     background-repeat: no-repeat;  /*без повторения картинки*/
     background-size: cover; /*размер картинки*/
     background-position: 50%; /*положение картинки*/
-    background-attachment: local;
 }
 
 .content-box {
