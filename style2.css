@@ -67,8 +67,7 @@ body {
 /* Адаптация для мобильных устройств */
 @media screen and (max-width: 768px) {
     body {
-        overflow-x: hidden; /*скрывает содержимое, которое выходит за пределы сайта по горизонтали*/
-         /*по вертикали*/
+        
         background-attachment: local; /*фиксирует фоновое изображение сайта*/
     }
     .content-box {
