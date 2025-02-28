@@ -46,7 +46,7 @@ body {
 }
 
 .button {
-    margin: 0 110px; /*отступы между кнопками*/
+    margin: 0 105px; /*отступы между кнопками*/
     background-color: lightsteelblue; /*цвет фона кнопки*/
     border-radius: 12% 3px; /*Скругление углов кнопки*/
     color: black; 
