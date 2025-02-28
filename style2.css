@@ -66,6 +66,10 @@ body {
 
 /* Адаптация для мобильных устройств */
 @media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
     .content-box {
         font-size: 18px;
     }
