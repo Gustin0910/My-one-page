@@ -46,7 +46,7 @@ body {
 }
 
 .button {
-    margin: 0 120px; /*отступы между кнопками*/
+    margin: 0 110px; /*отступы между кнопками*/
     background-color: lightsteelblue; /*цвет фона кнопки*/
     border-radius: 12% 3px; /*Скругление углов кнопки*/
     color: black; 
@@ -65,7 +65,7 @@ body {
 }
 
 /* Адаптация для мобильных устройств */
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
         overflow-y: hidden;
