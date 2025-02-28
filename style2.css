@@ -68,6 +68,7 @@ body {
 @media screen and (max-width: 768px) {
     body {
         
+        overflow-y: hidden; /*по вертикали*/
         background-attachment: local; /*фиксирует фоновое изображение сайта*/
     }
     .content-box {
