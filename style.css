@@ -59,9 +59,9 @@ body {
     /* Адаптация для мобильных устройств */
 @media screen and (max-width: 768px) {
      body {
-        overflow-x: hidden;
-        overflow-y: hidden;
-        background-attachment: local;
+        /* overflow-x: hidden; /*скрывает содержимое, которое выходит за пределы сайта по горизонтали */
+        overflow-y: hidden; /*по вертикали*/
+        background-attachment: local; /*фиксирует фоновое изображение сайта*/
     }
     .content-box {
         font-size: 18px;
