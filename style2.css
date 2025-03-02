@@ -69,7 +69,7 @@ body {
     body {
 /*         overflow-x: hidden; /*скрывает содержимое, которое выходит за пределы сайта по горизонтали*/
         overflow-y: hidden; /*по вертикали*/
-        /*background-attachment: local; фиксирует фоновое изображение сайта*/
+        background-attachment: local; /* фиксирует фоновое изображение сайта*/
     }
     .content-box {
         font-size: 18px;
