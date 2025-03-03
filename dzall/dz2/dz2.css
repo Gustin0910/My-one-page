@@ -6,7 +6,7 @@ body {
     place-items: center; /*центрирование по горизонтали и вертикали*/
     height: 170vh; /*сдвиг вниз + масштабирование самого сайта*/
 
-    background-image: url(fon5.jpeg);
+    background-image: url(fonn5.jpeg);
     background-repeat: no-repeat;  /*без повторения картинки*/
     background-size: cover; /*размер картинки*/
 }
