@@ -63,6 +63,7 @@ a {
 @media screen and (max-width: 768px) {
     body {
     height: 122vh; /*сдвиг вниз + масштабирование самого сайта*/
+    align-items: center;
     transform: scale(0.67); /*уменьшает размер страницы*/
     transform-origin: 0 0; /*устанавливает точку начала масштабирования*/
     width: 150%; /*сохраняет ширину страницы*/
