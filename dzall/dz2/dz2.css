@@ -9,7 +9,6 @@ body {
     background-image: url(/dzall/dz1/fon5.jpeg);
     background-repeat: no-repeat;  /*без повторения картинки*/
     background-size: cover; /*размер картинки*/
-    background-position: 50%; /*положение картинки*/
 }
 
 .button {
