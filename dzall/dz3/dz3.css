@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    place-items: center; /*центрирование по горизонтали и вертикали*/
+    /* height: 300vh; сдвиг вниз + масштабирование самого сайта*/
+
+    background-image: url(/dzall/dz1/fon5.jpeg);
+    background-repeat: no-repeat;  /*без повторения картинки*/
+    background-size: cover; /*размер картинки*/
+}
+
+.button {
+    background-color: lightsteelblue; /*цвет фона кнопки*/
+    border-radius: 12% 3px; /*Скругление углов кнопки*/
+    color: black;
+    padding: 10px 14px; /*отступы края текста от кнопки*/
+    font-size: 22px; /*размер*/
+    font-weight: bold;  /*жирность текста*/
+    text-decoration: none; /*удаление подчеркивания*/
+    transition: background-color 0.5s;  /*плавный переход цвета при наведении*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button:hover {
+    background-color: rgb(111, 231, 247);  /*цвет фона при наведении*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);  /*тень при наведении*/
+    transition: box-shadow 0.1s; /*плавный переход тени*/
+}
+
+@media screen and (max-width: 768px) {
+    body {
+    height: 210vh; /*сдвиг вниз + масштабирование самого сайта*/
+    align-items: center;
+    transform: scale(0.66); /*уменьшает размер страницы*/
+    transform-origin: 0 0; /*устанавливает точку начала масштабирования*/
+    width: 150%; /*сохраняет ширину страницы*/
+    
+    justify-content: center; /* Выравниваем по центру сайта */
+    /* overflow-x: hidden; /*скрывает содержимое, которое выходит за пределы сайта по горизонтали */
+    /* overflow-y: hidden; /*по вертикали*/
+    background-attachment: local; /*фиксирует фоновое изображение сайта*/
+   }
+}
