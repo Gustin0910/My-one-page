@@ -4,12 +4,11 @@ body {
 
     display: grid;
     place-items: center; /*центрирование по горизонтали и вертикали*/
-    height: 170vh; /*сдвиг вниз + масштабирование самого сайта*/
+    height: 162vh; /*сдвиг вниз + масштабирование самого сайта*/
 
     background-image: url(/dzall/dz1/fon5.jpeg);
     background-repeat: no-repeat;  /*без повторения картинки*/
     background-size: cover; /*размер картинки*/
-    background-position: 50%; /*положение картинки*/
 }
 
 .button {
@@ -44,6 +43,20 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.num5 {
+    background-image: url(/dzall/dz1/fon5.jpeg);
+    background-repeat: no-repeat;  /*без повторения картинки*/
+    background-size: cover; /*размер картинки*/
+    background-position: 50%; /*положение картинки*/
+}
+
+.num6 {
+    background-image: url(/dzall/dz1/fon5.jpeg);
+    background-repeat: no-repeat;  /*без повторения картинки*/
+    background-size: cover; /*размер картинки*/
+    background-position: 50%; /*положение картинки*/
 }
 
 @media screen and (max-width: 768px) {
