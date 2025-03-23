@@ -6,7 +6,7 @@ body {
     place-items: center; /*центрирование по горизонтали и вертикали*/
     height: 162vh; /*сдвиг вниз + масштабирование самого сайта*/
 
-    background-image: url(/dzall/dz1/fon5.jpeg);
+    background-image: url(fonn5.jpeg);
     background-repeat: no-repeat;  /*без повторения картинки*/
     background-size: cover; /*размер картинки*/
 }
@@ -46,14 +46,14 @@ a {
 }
 
 .num5 {
-    background-image: url(/dzall/dz1/fon5.jpeg);
+    background-image: url(fon5.jpeg);
     background-repeat: no-repeat;  /*без повторения картинки*/
     background-size: cover; /*размер картинки*/
     background-position: 50%; /*положение картинки*/
 }
 
 .num6 {
-    background-image: url(/dzall/dz1/fon5.jpeg);
+    background-image: url(fon5.jpeg);
     background-repeat: no-repeat;  /*без повторения картинки*/
     background-size: cover; /*размер картинки*/
     background-position: 50%; /*положение картинки*/
@@ -61,7 +61,7 @@ a {
 
 @media screen and (max-width: 768px) {
     body {
-    height: 122vh; /*сдвиг вниз + масштабирование самого сайта*/
+    height: 132vh; /*сдвиг вниз + масштабирование самого сайта*/
     align-items: center;
     transform: scale(0.67); /*уменьшает размер страницы*/
     transform-origin: 0 0; /*устанавливает точку начала масштабирования*/
