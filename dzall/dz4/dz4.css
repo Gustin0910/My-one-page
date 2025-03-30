@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    place-items: center; /*центрирование по горизонтали и вертикали*/
+    height: 290vh; /*сдвиг вниз + масштабирование самого сайта*/
+
+    background-image: url(fondz4.jpeg);
+    background-size: 212%;
+    background-repeat: no-repeat;  /*без повторения картинки*/
+    /*background-size: cover; /*размер картинки*/
+}
+
+.button {
+    background-color: lightsteelblue; /*цвет фона кнопки*/
+    border-radius: 12% 3px; /*Скругление углов кнопки*/
+    color: black;
+    padding: 10px 14px; /*отступы края текста от кнопки*/
+    font-size: 22px; /*размер*/
+    font-weight: bold;  /*жирность текста*/
+    text-decoration: none; /*удаление подчеркивания*/
+    transition: background-color 0.5s;  /*плавный переход цвета при наведении*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button:hover {
+    background-color: rgb(111, 231, 247);  /*цвет фона при наведении*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);  /*тень при наведении*/
+    transition: box-shadow 0.1s; /*плавный переход тени*/
+}
+
+.Tron1 {
+    position: absolute LEFT 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.Tron2 {
+    left: 25px; 
+    width: 200px; 
+    height: 200px;
+    z-index: 0;
+    margin-bottom: -150px;
+}
+
+.text { 
+    left: 50px;
+    margin-left: 10px;
+    z-index: 1; 
+    font-size: 25px; 
+    color: rgba(55, 172, 255, 0.504);
+    margin-top: -50px;
+}
+
+.Tron3 {
+    position: absolute LEFT 20px;
+    top: 20px;
+    width: 200px;
+    height: 200px;
+    z-index: 0;
+}
+
+.img1{
+    width: 300px;
+    height: 300px;
+    margin-right: 350px;
+    margin-bottom: -250px;
+}
+
+.img2{
+    width: 300px;
+    height: 300px;
+    margin-bottom: -270px;
+}
+
+.img3{
+    width: 300px;
+    height: 300px;
+    margin-left: 350px;
+    margin-bottom: -60px;
+}
+
+.divv {
+    margin-left: center;
+}
+
+.tro1{
+    width: 400px;
+    margin-right: -250px;
+    margin-bottom: -25px;
+}
+
+.tro2{
+    width: 250px;
+    height: 150px;
+    margin-left: -70px;
+}
+
+.NewYear {
+    color: rgba(51, 164, 251, 0.755);
+    font-size: 30px;
+    margin-top: -150px;
+    margin-left: 90px;
+    z-index: 0;
+    position: absolute;
+}
+
+.Disk {
+    width: 500px;
+    height: 220px;
+    margin-bottom: 20px;
+    
+}
+
+.Text1{
+    color: rgba(255, 255, 0, 0.737);
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: -180px;
+    margin-left: 150px;
+    position: absolute;
+    z-index: 1;
+    }
+    
+    .Text2{
+    color: rgba(255, 149, 0, 0.597);
+    font-size: 40px;
+    margin-top: -160px;
+    margin-left: 150px;
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 2;
+    }
+    
+    .Text3{
+    color: rgba(221, 1, 100, 0.685);
+    font-size: 40px;
+    margin-top: -140px;
+    margin-left: 150px;
+    position: absolute;
+    z-index: 3;
+    }
+
+    .disk2 {
+        width: 500px;
+        height: 350px;
+        margin-bottom: -304px;
+    }
+    
+    .moto{
+        width: 350px;
+        height: 225px;
+        border: 13px solid rgba(156, 135, 0, 0.23);
+        opacity: 1.0;
+    }
+
+    
+    
+    .HappyText {
+        color: rgb(0, 212, 212);
+        font-size: 40px;
+        margin-top: -245px;
+        margin-left: 90px;
+        z-index: 1;
+        position: absolute;
+    }
+    
+    .HappyText2 {
+        color: rgba(0, 212, 212);
+        font-size: 40px;
+        margin-left: 150px;
+        margin-top: -150px;
+        z-index: 2;
+        position: absolute;
+    }
+
+    .HappyText3 {
+        color: rgba(212, 14, 0, 0.815);
+        font-size: 40px;
+        margin-left: 235px;
+        margin-top: -70px;
+        z-index: 3;
+        position: absolute;
+    }
+
+    .fonn {
+        width: 600px;
+        height: 400px;
+        margin-bottom: -350px;
+    }
+    
+    .moto2 {
+        width: 400px;
+        height: 300px;
+        border: 13px dashed rgb(145, 12, 39);
+    }
+    
+    .Textt2 {
+        margin-top: -375px;
+        margin-left: 170px;
+        color: crimson;
+        font-size: 30px;
+    }
+
+@media screen and (max-width: 768px) {
+    body {
+    height: 20vh; /*сдвиг вниз + масштабирование самого сайта*/
+    align-items: center;
+    transform: scale(0.5); /*уменьшает размер страницы*/
+    transform-origin: 0 0; /*устанавливает точку начала масштабирования*/
+    width: 200%; /*сохраняет ширину страницы*/
+    background-size: 400%;
+    
+    justify-content: center; /* Выравниваем по центру сайта */
+    /* overflow-x: hidden; /*скрывает содержимое, которое выходит за пределы сайта по горизонтали */
+    /*overflow-y: hidden; /*по вертикали*/
+    background-attachment: local; /*фиксирует фоновое изображение сайта*/
+   }
+}
