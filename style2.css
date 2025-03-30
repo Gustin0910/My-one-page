@@ -40,12 +40,9 @@ body {
 }
 
  /*блок кнопок*/
-.feature {
-    display: flex; /*выравниваем кнопки в ряд*/
-    justify-content: center; /*выравниваем кнопки по центру*/
-}
 
-.button {
+
+button {
     margin: 20px; /*отступы между кнопками*/
     background-color: lightsteelblue; /*цвет фона кнопки*/
     border-radius: 12% 3px; /*Скругление углов кнопки*/
@@ -58,7 +55,28 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.button:hover {
+button::after {
+    content: attr(data-tooltip); /* Содержимое берётся из атрибута data-tooltip */
+  position: absolute;
+  bottom: 22%; /* Расположить подсказку над кнопкой */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(92, 185, 255, 0.385);
+  color: rgba(4, 0, 0, 0.819);
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap; /* Предотвращает перенос текста */
+  visibility: hidden; /* Подсказка скрыта по умолчанию */
+  opacity: 0; /* Прозрачность для анимации */
+  transition: opacity 0.3s; /* Анимация появления */
+}
+
+button:hover:after {
+    visibility: visible; /* Показываем подсказку при наведении */
+    opacity: 1; /* Убираем прозрачность */
+}
+
+button:hover {
     background-color: rgb(111, 231, 247);  /*цвет фона при наведении*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);  /*тень при наведении*/
     transition: box-shadow 0.1s; /*плавный переход тени*/
