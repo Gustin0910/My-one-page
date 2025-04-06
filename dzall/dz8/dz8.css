@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    place-items: center; /*центрирование по горизонтали и вертикали*/
+    height: 345vh; /*сдвиг вниз + масштабирование самого сайта*/
+
+    background-image: url(fondz8.jpeg);
+    background-repeat: no-repeat;  /*без повторения картинки*/
+    background-size: cover; /*размер картинки*/
+}
+
+.button {
+    background-color: lightsteelblue; /*цвет фона кнопки*/
+    border-radius: 12% 3px; /*Скругление углов кнопки*/
+    color: black; 
+    padding: 10px 14px; /*отступы края текста от кнопки*/
+    font-size: 22px; /*размер*/
+    font-weight: bold;  /*жирность текста*/
+    text-decoration: none; /*удаление подчеркивания*/
+    transition: background-color 0.5s;  /*плавный переход цвета при наведении*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button:hover {
+    background-color: rgb(111, 231, 247);  /*цвет фона при наведении*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);  /*тень при наведении*/
+    transition: box-shadow 0.1s; /*плавный переход тени*/
+}
+
+.Long { 
+    font-variant: small-caps;
+    background: rgb(255, 0, 0); 
+    padding-right: 95%;
+} 
+
+
+.red {
+    BACKGROUND-color: red;
+
+} 
+
+.h1 {
+    color: red; 
+    margin-left: 90%;
+}
+
+i{
+    text-align: center;
+    font-size: 70px;
+    color: rgb(121, 21, 215);
+    text-shadow: 3px -4px 3px rgb(52, 52, 52);
+}
+
+.t1{
+    font-size: 30px;
+    margin-top: -20px;
+    color: rgba(122, 52, 187, 0.881);
+}
+
+.second-initial-letter {
+    font-size: 3em;
+    line-height: 0.8em;
+    color: green;  
+  }
+  
+.zag {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+  }
+  
+  img {
+    width: 400px;
+    height: 200px;
+    border: 10px solid rgba(2, 2, 160, 0.633);
+  }
+
+  .t2{
+    background-color: rgba(0, 255, 255, 0.397);
+    font-size: 20px;
+    font-family: "Monotype Corsiva", cursive; 
+  }
+
+  .table {
+    border: 10px solid blue; 
+    border-collapse: collapse; 
+    width: 90%; 
+  }
+  
+  .th {
+    background-color: yellow;
+    color: red;
+    border: 3px dotted red; 
+    padding: 8px;
+    text-align: left; 
+  }
+  
+  .td {
+    background-color: green; 
+    border: 2px solid yellow; 
+    padding: 8px; 
+  }
+
+@media screen and (max-width: 768px) {
+    body {
+    height: 150vh; /*сдвиг вниз + масштабирование самого сайта*/
+    transform: scale(0.67); /*уменьшает размер страницы*/
+    transform-origin: 0 0; /*устанавливает точку начала масштабирования*/
+    width: 150%; /*сохраняет ширину страницы*/
+    justify-content: center; /* Выравниваем по центру сайта */
+    /* overflow-x: hidden; /*скрывает содержимое, которое выходит за пределы сайта по горизонтали */
+    /* overflow-y: hidden; /*по вертикали*/
+    background-attachment: local; /*фиксирует фоновое изображение сайта*/
+   }
+    .h1 { 
+    margin-left: 70%;
+}
+.Long { 
+    padding-right: 85%;
+} 
+}
