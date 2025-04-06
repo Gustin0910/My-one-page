@@ -31,6 +31,7 @@ body {
         0 1px #206779, /* Снизу */
         0 0 10px #528cbb, /* Свечение */
         0 0 20px #0586ff;
+        text-shadow: -3px 5px 3px rgb(0, 0, 0);
 }
 
 @keyframes color-change {
@@ -92,8 +93,13 @@ button:hover {
     .content-box {
         font-size: 18px;
     }
-    .button {
-        font-size: 18px;
+    button {
+        font-size: 20px;
         padding: 8px 12px;
+        margin: 25px 30px;
+    }
+
+    button::after {
+        bottom: 13%; /* Расположить подсказку над кнопкой */
     }
 }
