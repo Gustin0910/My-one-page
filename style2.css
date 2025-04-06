@@ -86,7 +86,6 @@ button:hover {
 /* Адаптация для мобильных устройств */
 @media screen and (max-width: 768px) {
     body {
-        height: 100vh;
     /* overflow-x: hidden; /*скрывает содержимое, которое выходит за пределы сайта по горизонтали*/
         overflow-y: hidden; /*по вертикали*/
         background-attachment: local; /* фиксирует фоновое изображение сайта*/
@@ -101,6 +100,6 @@ button:hover {
     }
 
     button::after {
-        bottom: 13%; /* Расположить подсказку над кнопкой */
+        bottom: 10%; /* Расположить подсказку над кнопкой */
     }
 }
