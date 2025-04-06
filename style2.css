@@ -59,7 +59,7 @@ button {
 button::after {
     content: attr(data-tooltip); /* Содержимое берётся из атрибута data-tooltip */
   position: absolute;
-  bottom: 22%; /* Расположить подсказку над кнопкой */
+  bottom: 22%; /* Расположить подсказку под кнопкой */
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(92, 185, 255, 0.385);
@@ -100,6 +100,10 @@ button:hover {
     }
 
     button::after {
+        content: attr(data-tooltip); /* Содержимое берётся из атрибута data-tooltip */
+        position: absolute;
         bottom: 13%; /* Расположить подсказку над кнопкой */
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
