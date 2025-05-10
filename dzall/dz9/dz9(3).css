@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+    body {
+  margin: 60px auto;
+        transform: scale(0.3); /*уменьшает размер страницы*/
+        transform-origin: 0 0; /*устанавливает точку начала масштабирования*/
+    width: 10%; /*сохраняет ширину страницы*/
+    justify-content: center; /* Выравниваем по центру сайта */
+    /* overflow-x: hidden; /*скрывает содержимое, которое выходит за пределы сайта по горизонтали */
+    /* overflow-y: hidden; /*по вертикали*/
+    background-attachment: local; /*фиксирует фоновое изображение сайта*/
+    }
+    .button {
+        font-size: 50px;
+        padding: 10px 24px;
+        margin: 25px -15px;
+    }
+    
+}

@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    place-items: center; /*центрирование по горизонтали и вертикали*/
+    height: 100vh; /*сдвиг вниз + масштабирование самого сайта*/
+
+    background-image: url(fondz9.jpeg);
+    background-repeat: no-repeat;  /*без повторения картинки*/
+    background-size: 2000px 1000px; /*размер картинки*/
+}
+
+.button {
+    margin: 20px; /*отступы между кнопками*/
+    background-color: lightsteelblue; /*цвет фона кнопки*/
+    border-radius: 12% 3px; /*Скругление углов кнопки*/
+    color: black; 
+    padding: 10px 14px; /*отступы края текста от кнопки*/
+    font-size: 22px; /*размер*/
+    font-weight: bold;  /*жирность текста*/
+    text-decoration: none; /*удаление подчеркивания*/
+    transition: background-color 0.5s;  /*плавный переход цвета при наведении*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button:hover {
+    background-color: rgb(111, 231, 247);  /*цвет фона при наведении*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);  /*тень при наведении*/
+    transition: box-shadow 0.1s; /*плавный переход тени*/
+}
+
+button {
+    margin: 25px; /*отступы между кнопками*/
+    background-color: rgb(233, 150, 122); /*цвет фона кнопки*/
+    border-radius: 12% 3px; /*Скругление углов кнопки*/
+    color: black; 
+    padding: 10px 25px; /*отступы края текста от кнопки*/
+    font-size: 25px; /*размер*/
+    font-weight: bold;  /*жирность текста*/
+    text-decoration: none; /*удаление подчеркивания*/
+    transition: background-color 0.5s;  /*плавный переход цвета при наведении*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button::after {
+    content: attr(data-tooltip); /* Содержимое берётся из атрибута data-tooltip */
+  position: absolute;
+  font-style: italic; /*текст внутри подсказки курсив*/
+  bottom: 49%; /* Расположить подсказку под кнопкой */
+  left: 59%;
+  transform: translateX(-50%);
+  background-color: rgba(95, 158, 160, 0.385);
+  color: rgba(255, 156, 70, 0.819);
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap; /* Предотвращает перенос текста */
+  visibility: hidden; /* Подсказка скрыта по умолчанию */
+  opacity: 0; /* Прозрачность для анимации */
+  transition: opacity 0.3s; /* Анимация появления */
+}
+
+button:hover:after {
+    visibility: visible; /* Показываем подсказку при наведении */
+    opacity: 1; /* Убираем прозрачность */
+}
+
+button:hover {
+    background-color: rgb(153, 50, 204);  /*цвет фона при наведении*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);  /*тень при наведении*/
+    transition: box-shadow 0.1s; /*плавный переход тени*/
+}
+
+.feature {
+    margin-bottom: 10%;
+    max-width: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+    height: 100vh; /*сдвиг вниз + масштабирование самого сайта*/
+    transform: scale(0.67); /*уменьшает размер страницы*/
+    transform-origin: 0 0; /*устанавливает точку начала масштабирования*/
+    width: 150%; /*сохраняет ширину страницы*/
+    justify-content: center; /* Выравниваем по центру сайта */
+    /* overflow-x: hidden; /*скрывает содержимое, которое выходит за пределы сайта по горизонтали */
+    /* overflow-y: hidden; /*по вертикали*/
+    background-attachment: local; /*фиксирует фоновое изображение сайта*/
+   }
+
+button {
+    font-size: 20px;
+    padding: 10px 24px;
+    margin: 25px -15px;
+}
+
+button::after {
+    content: attr(data-tooltip); /* Содержимое берётся из атрибута data-tooltip */
+    position: absolute;
+    bottom: 36%; /* Расположить подсказку над кнопкой */
+    left: 30%;
+    transform: translateX(-50%);
+}
+}
