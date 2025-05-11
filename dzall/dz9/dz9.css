@@ -168,16 +168,64 @@ button:hover {
    }
 
 button {
-    font-size: 20px;
-    padding: 10px 24px;
+    font-size: 30px;
+    padding: 5px 34px;
     margin: 25px -15px;
+    left: -20px;
+    bottom: -165px;
 }
 
-button::after {
-    content: attr(data-tooltip); /* Содержимое берётся из атрибута data-tooltip */
-    position: absolute;
-    bottom: 36%; /* Расположить подсказку над кнопкой */
-    left: 30%;
-    transform: translateX(-50%);
+/* Родительский элемент ссылки должен быть position: relative */
+[data-tooltip] {
+  position: relative; /* Чтобы ::after позиционировался относительно ссылки */
+  cursor: pointer;    /* Курсор при наведении */
+}
+
+/* Стили для подсказки */
+[data-tooltip]::after {
+  content: attr(data-tooltip); /* Текст подсказки из атрибута */
+  position: absolute;
+  bottom: -165px; /* Расположить подсказку чуть выше ссылки */
+  left: -150px;    /* Центрируем по горизонтали */
+  transform: translateX(-50%);
+  
+  background-color: rgba(122, 176, 178, 0.328);
+  color: rgba(255, 156, 70, 0.95);
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap; /* Запрет переноса */
+  
+  visibility: hidden; /* Скрываем по умолчанию */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+  pointer-events: none; /* Чтобы подсказка не мешала наведению */
+  font-style: italic;
+  font-size: 20px;
+  z-index: 10;
+}
+
+/* Стрелочка подсказки */
+[data-tooltip]::before {
+  content: "";
+  position: absolute;
+  bottom: -142px; /* чуть ниже подсказки */
+  left: 19%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(221, 112, 87, 0.85) transparent transparent transparent;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Показываем подсказку и стрелочку при наведении */
+[data-tooltip]:hover::after,
+[data-tooltip]:hover::before {
+  visibility: visible;
+  opacity: 1;
 }
 }
