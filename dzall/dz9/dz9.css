@@ -31,44 +31,123 @@ body {
 }
 
 button {
-    margin: 25px; /*отступы между кнопками*/
-    background-color: rgb(233, 150, 122); /*цвет фона кнопки*/
-    border-radius: 12% 3px; /*Скругление углов кнопки*/
-    color: black; 
-    padding: 10px 25px; /*отступы края текста от кнопки*/
-    font-size: 25px; /*размер*/
-    font-weight: bold;  /*жирность текста*/
-    text-decoration: none; /*удаление подчеркивания*/
-    transition: background-color 0.5s;  /*плавный переход цвета при наведении*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  position: relative;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, .4);
+  background: none;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-button::after {
-    content: attr(data-tooltip); /* Содержимое берётся из атрибута data-tooltip */
+button:before, button:after {
+  content: "";
   position: absolute;
-  font-style: italic; /*текст внутри подсказки курсив*/
-  bottom: 49%; /* Расположить подсказку под кнопкой */
-  left: 59%;
-  transform: translateX(-50%);
-  background-color: rgba(95, 158, 160, 0.385);
-  color: rgba(255, 156, 70, 0.819);
-  padding: 5px;
-  border-radius: 5px;
-  white-space: nowrap; /* Предотвращает перенос текста */
-  visibility: hidden; /* Подсказка скрыта по умолчанию */
-  opacity: 0; /* Прозрачность для анимации */
-  transition: opacity 0.3s; /* Анимация появления */
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+button:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+button:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+button:hover:before, 
+button:hover:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+button:hover:before {
+  transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+button:hover:after {
+  transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+button:hover {
+  background: rgba(255, 255, 255, .2);
 }
 
-button:hover:after {
-    visibility: visible; /* Показываем подсказку при наведении */
-    opacity: 1; /* Убираем прозрачность */
+/* Родительский элемент ссылки должен быть position: relative */
+[data-tooltip] {
+  position: relative; /* Чтобы ::after позиционировался относительно ссылки */
+  cursor: pointer;    /* Курсор при наведении */
+}
+
+/* Стили для подсказки */
+[data-tooltip]::after {
+  content: attr(data-tooltip); /* Текст подсказки из атрибута */
+  position: absolute;
+  bottom: -50%; /* Расположить подсказку чуть выше ссылки */
+  left: 180%;    /* Центрируем по горизонтали */
+  transform: translateX(-50%);
+  
+  background-color: rgba(122, 176, 178, 0.328);
+  color: rgba(255, 156, 70, 0.95);
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap; /* Запрет переноса */
+  
+  visibility: hidden; /* Скрываем по умолчанию */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+  pointer-events: none; /* Чтобы подсказка не мешала наведению */
+  font-style: italic;
+  font-size: 20px;
+  z-index: 10;
+}
+
+/* Стрелочка подсказки */
+[data-tooltip]::before {
+  content: "";
+  position: absolute;
+  bottom: 115%; /* чуть ниже подсказки */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(221, 112, 87, 0.85) transparent transparent transparent;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Показываем подсказку и стрелочку при наведении */
+[data-tooltip]:hover::after,
+[data-tooltip]:hover::before {
+  visibility: visible;
+  opacity: 1;
 }
 
 button:hover {
-    background-color: rgb(153, 50, 204);  /*цвет фона при наведении*/
+    background-color: rgba(192, 95, 240, 0.223);  /*цвет фона при наведении*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);  /*тень при наведении*/
     transition: box-shadow 0.1s; /*плавный переход тени*/
+    transition: 0.4s ease-in-out;
+    color: #c97c09;
+}
+
+button:hover {
+  box-shadow: 0 0 10px 0 #f137a7da inset, 0 0 10px 3px #37aaf1;
+  color: #46a9f9;
 }
 
 .feature {
